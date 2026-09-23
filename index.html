@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="google-site-verification" content="PCaGvQXy5myVsDrwd5E64tWbKuvLLDKQvqrxjyYEMNM" />
+<meta name="google-site-verification" content="PCaGvQXy5myVsDrwd5E64tWbKuvLLDKQvqrxjyENMM" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="KHATA ERP - Professional POS, Inventory, Pharmacy, Accounting, Laboratory and Online Orders management system.">
 <meta name="keywords" content="KHATA ERP, POS software Pakistan, pharmacy software, inventory management, accounting software">
@@ -30,6 +30,18 @@ h1{font-size:clamp(42px,6vw,70px);line-height:1.04;letter-spacing:-2px}h1 .accen
 .chart svg{width:100%;height:100%}
 section{padding:85px 0}.section-head{text-align:center;max-width:760px;margin:0 auto 45px}.section-head h2{font-size:38px;line-height:1.15;margin-bottom:12px}.section-head p{color:var(--muted)}
 .kicker{color:var(--green);font-weight:800;font-size:13px;text-transform:uppercase;letter-spacing:1px}
+.contact-section{padding:85px 0}
+.contact-card{background:linear-gradient(145deg,#102238,#0a1727);border:1px solid var(--border);border-radius:22px;padding:40px;text-align:center}
+.contact-card h2{font-size:38px;line-height:1.15;margin:10px 0 12px}
+.contact-card p{color:var(--muted);max-width:700px;margin:0 auto 28px}
+.contact-buttons{display:flex;justify-content:center;gap:13px;flex-wrap:wrap}
+.contact-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 20px;border-radius:10px;font-weight:700;border:1px solid var(--border);background:#102238;color:#fff}
+.contact-btn:hover{border-color:rgba(32,201,151,.45);color:var(--green)}
+.contact-btn.whatsapp{background:var(--green);color:#06131d;border-color:var(--green)}
+.contact-details{display:flex;justify-content:center;gap:28px;flex-wrap:wrap;margin-top:25px;color:#d8e3ee;font-size:14px}
+.contact-details a:hover{color:var(--green)}
+@media(max-width:680px){.contact-card{padding:32px 20px}.contact-card h2{font-size:30px}.contact-details{flex-direction:column;gap:10px}}
+
 .features{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.feature{background:linear-gradient(145deg,var(--card),#0c1a2b);border:1px solid var(--border);border-radius:18px;padding:25px;transition:.25s}.feature:hover{transform:translateY(-5px);border-color:rgba(32,201,151,.3)}
 .icon{width:46px;height:46px;border-radius:13px;display:grid;place-items:center;background:rgba(32,201,151,.1);font-size:22px;margin-bottom:17px}.feature h3{font-size:19px;margin-bottom:8px}.feature p{color:var(--muted);font-size:14px}
 .industries{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.industry{padding:20px;border:1px solid var(--border);border-radius:15px;background:#0d1b2d}.industry b{display:block}.industry span{font-size:13px;color:var(--muted)}
@@ -43,7 +55,7 @@ footer{border-top:1px solid var(--border);padding:35px 0;color:var(--muted)}.foo
 <body>
 <nav><div class="container nav-inner">
 <a class="logo" href="#"><div class="logo-mark">K</div><div>KHATA <span>ERP</span></div></a>
-<div class="nav-links"><a href="#features">Features</a><a href="#industries">Industries</a><a href="#pharmacy">Pharmacy</a><a href="#about">Why KHATA</a><a class="nav-btn" href="https://khata-erp.vercel.app/" target="_blank">Open ERP</a></div>
+<div class="nav-links"><a href="#features">Features</a><a href="#industries">Industries</a><a href="#pharmacy">Pharmacy</a><a href="#about">Why KHATA</a><a href="#contact">Contact</a><a class="nav-btn" href="https://khata-erp.vercel.app/" target="_blank">Open ERP</a></div>
 </div></nav>
 
 <main>
@@ -84,9 +96,54 @@ footer{border-top:1px solid var(--border);padding:35px 0;color:var(--muted)}.foo
 <div class="check"><i>✓</i><span>Web-based ERP access</span></div><div class="check"><i>✓</i><span>Cloud-connected data architecture</span></div><div class="check"><i>✓</i><span>Offline-capable workflows</span></div><div class="check"><i>✓</i><span>Online ordering capability</span></div><div class="check"><i>✓</i><span>Professional PDF and document workflows</span></div></div>
 </div></section>
 
+
+<section id="contact" class="contact-section">
+<div class="container">
+<div class="contact-card">
+<div class="kicker">Contact KHATA ERP</div>
+<h2>Have questions? Let’s talk.</h2>
+<p>Contact KHATA ERP for information, support, registration, business setup or a product demonstration.</p>
+<div class="contact-buttons">
+<a class="contact-btn whatsapp" href="https://wa.me/923419208226?text=Assalam-o-Alaikum%2C%20I%20need%20information%20about%20KHATA%20ERP." target="_blank" rel="noopener">💬 WhatsApp Us</a>
+<button class="contact-btn secondary" type="button" onclick="copyPhone()">📞 Call Us</button>
+<button class="contact-btn secondary" type="button" onclick="copyEmail()">📧 Email Us</button>
+</div>
+<div class="contact-details">
+<span>WhatsApp / Phone: <a href="tel:+923419208226">+92 341 9208226</a></span>
+<span>Email: <a href="mailto:naqibullahshah58@gmail.com">naqibullahshah58@gmail.com</a></span>
+</div>
+</div>
+</div>
+</section>
+
 <section id="about"><div class="container"><div class="cta"><div class="kicker">Start with KHATA ERP</div><h2>Bring your business operations into one system.</h2><p>Explore the live KHATA ERP and discover the modules available for your business.</p><a class="hero-btn" href="https://khata-erp.vercel.app/" target="_blank">Open KHATA ERP</a></div></div></section>
 </main>
 
-<footer><div class="container footer-inner"><div>© 2026 KHATA ERP. All rights reserved.</div><div class="footer-links"><a href="#features">Features</a><a href="#industries">Industries</a><a href="#about">About</a><a href="https://khata-erp.vercel.app/" target="_blank">ERP Login</a></div></div></footer>
+<footer><div class="container footer-inner"><div>© 2026 KHATA ERP. All rights reserved.</div><div class="footer-links"><a href="#features">Features</a><a href="#industries">Industries</a><a href="#about">About</a><a href="#contact">Contact</a><a href="https://khata-erp.vercel.app/" target="_blank">ERP Login</a></div></div></footer>
+
+<script>
+function copyPhone() {
+  const value = "+92 341 9208226";
+  if (navigator.clipboard && window.isSecureContext) {
+    navigator.clipboard.writeText(value).then(() => {
+      alert("KHATA ERP Phone Number:\n\n" + value + "\n\nNumber copied to clipboard.");
+    }).catch(() => alert("KHATA ERP Phone Number:\n\n" + value));
+  } else {
+    alert("KHATA ERP Phone Number:\n\n" + value);
+  }
+}
+
+function copyEmail() {
+  const value = "naqibullahshah58@gmail.com";
+  if (navigator.clipboard && window.isSecureContext) {
+    navigator.clipboard.writeText(value).then(() => {
+      alert("KHATA ERP Email:\n\n" + value + "\n\nEmail copied to clipboard.");
+    }).catch(() => alert("KHATA ERP Email:\n\n" + value));
+  } else {
+    alert("KHATA ERP Email:\n\n" + value);
+  }
+}
+</script>
+
 </body>
 </html>
